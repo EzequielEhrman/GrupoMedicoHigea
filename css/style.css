@@ -5,6 +5,10 @@ ul{
 .contacto{
     color: brown;
 }
+.subtitu{
+    font-family: 'Roboto', sans-serif;
+    
+}
 /*@medias*/
 /*DESKTOP*/
 @media (min-width:1023px) {
@@ -37,7 +41,8 @@ font-style: italic;}
     .jusconbet{justify-content: space-between;}
     .p20{padding: 20px;}
     .Align-i-center{align-items: center;}
-    .subtitu{font-size: 40px;}
+    .subtitu{font-size: 40px;
+    }
     .mapa
 
     ul{
