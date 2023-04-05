@@ -8,3 +8,17 @@ font-style: italic;
 color:brown;
 padding: 20px;
 }
+
+
+
+
+/*@medias*/
+/*DESKTOP*/
+@media (min-width:1024px){}
+
+
+
+/*MOBILE*/
+@media (max-width:768px){
+
+}
