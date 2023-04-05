@@ -2,24 +2,9 @@
 ul{
     list-style-type: none;
 }
-a{text-decoration: none;
-font-size:20px;
-font-style: italic;
-color:brown;
-padding: 20px;
+.contacto{
+    color: brown;
 }
-
-/*GRID*/
-ul{
-    display: flex;
-}
-.justconBeet{
-    justify-content: space-between;
-}
-
-
-
-
 /*@medias*/
 /*DESKTOP*/
 @media (min-width:1023px) {
@@ -29,7 +14,7 @@ ul{
         grid-template-rows: auto auto auto;
 
     }
-    header, footer{display: flex;}
+    header,ul, footer{display: flex;}
 
     .gridmainIndex{display: grid;
     grid-template-areas: 
@@ -40,18 +25,44 @@ ul{
     grid-template-rows: repeat(3,auto);
 }
     .imgprincipal{grid-area:imgprincipal;}
-    .titulo{grid-area: titulo;}
+    .titulo{grid-area: titulo;
+    display: flex;
+flex-direction: column;
+align-items: center;
+font-family: Arial, Helvetica, sans-serif;
+font-style: italic;}
     .tituloh3{grid-area: tituloh3;}
     .mapa{grid-area: mapa;}
     .formulario{grid-area: formulario;}
-    
+    .jusconbet{justify-content: space-between;}
+    .p20{padding: 20px;}
+    .Align-i-center{align-items: center;}
+    .subtitu{font-size: 40px;}
+
+    ul{
+        list-style-type: none;
+    }
+    a{text-decoration: none;
+        font-size: 20px;
+    font-style: italic;
+    color:brown;
+    padding: 20px;
+    }
 }
 
 
 
 /*MOBILE*/
 @media (max-width:768px){
-   
-    
-
+   header, main, footer{display: flex;
+flex-direction: column;
+align-items: center;}
+ul{display: flex;padding: 0px;}
+a{text-decoration: none;
+ font-style: italic;
+color:brown;
+padding: 5px;
+margin: 5px;
+}
+.p20{padding: 20px;}
 }
