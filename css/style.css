@@ -15,9 +15,19 @@ ul{
 .subtitu1{
     font-family: 'Roboto', sans-serif;
 }
-.parrafoprinci{
+.profesionales{
     font-family: 'Roboto', sans-serif;
 }
+.titulodr{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+.fondocua{
+    background-color:lightgrey;
+    padding: 10px;
+    margin: 10px;
+}
+
 /*@medias*/
 /*DESKTOP*/
 @media (min-width:1023px) {
@@ -75,21 +85,35 @@ font-style: italic;}
     padding: 20px;
     }
     .gridmainProf{
+        display: grid;
         grid-template-areas: 
-        "imgprincipalp imgprincipalp imgprincipalp imgprincipalp"
-        "contenedor contenedor contenedor contenedor"
-        "cuadrado1 cuadrado2 cuadrado3 cuadrado4";
-        grid-template-columns: repeat(4,f1);
-        grid-template-rows: repeat(4,auto);
-        
+        "imgprincipalp imgprincipalp"
+        "contenedor contenedor"
+        "cuadrado1 cuadrado2"
+        "cuadrado3 cuadrado4";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto auto;
     }
     .imgprincipalp{grid-area: imgprincipalp;}
-    .contenedor{grid-area: contenedor;}
+    .contenedor {grid-area: contenedor ;}
     .cuadrado1{grid-area: cuadrado1;}
-    .cuadrado2{grid-area: cuadrado2;}
+    .cuadrado2 {grid-area: cuadrado2;}
     .cuadrado3{grid-area: cuadrado3;}
     .cuadrado4{grid-area: cuadrado4;}
-    
+    .drs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .profesionales{
+        font-size: 30px;
+    }
+
 }
 
 
@@ -118,5 +142,10 @@ margin: 5px;
     display: flex;
     flex-direction:column;
     align-items: center;
+}
+.parrafodrs{ display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
 }
 }
