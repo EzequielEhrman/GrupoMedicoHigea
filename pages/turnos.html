@@ -16,39 +16,39 @@
                <img src="../img/logo-higea (1).png" alt="logo-higea">
             </div>
 
-        <nav>
-            <ul class="justconBeet">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="pages/profesionales.html">Profesionales</a></li>
-                <li><a href="#">Turnos</a></li>
-                <li><a href="pages/recetas.html">Recetas</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+            <nav>
+              <ul class="justconBeet">
+                  <li><a href="../index.html">Inicio</a></li>
+                  <li><a href="profesionales.html">Profesionales</a></li>
+                  <li><a href="#">Turnos</a></li>
+                  <li><a href="recetas.html">Recetas</a></li>
+                  <li><a href="contacto">Contacto</a></li>
+              </ul>
+          </nav>
     </header>
 <!--Contenido Principal de contacto-->
 <main class="GridTurnos">
 
     <div class="imgprincipalT">
-        <img src="../img/fotoancha.jpg" alt="fotomedicos" width="1280"height="100">
+        <img src="../img/fotoancha.jpg" alt="fotomedicos" width="100%">
     </div>
 
-    <div class="tituloT">
+    <div class="tituloT Align-i-center">
         <h3 class="tituloh3">TURNOS</h3>
     </div>
     <div class="subtituT">
         <h4 id="subth4">Para seleccionar un turno seleccione el servicio y la cobertura medica </h4>
         </div>
- 
+    <div class="especialidades p20">    
         <select name="select">
             <option value="cginecologica">Consulta Ginecológica</option>
             <option value="consultaclinica">Consulta Clinica Medica</option>
             <option value="Obstetricia">Consulta Obstetricia</option>
             <option value="pediatrica">Consulta Pediatrica</option>
           </select>
-
+    </div>
+        <div class="coberturas p20">
           <select name="select">
-               
             <option value="osde">Osde 210</option>
             <option value="osde">Osde 310</option>
             <option value="osde">Osde 410</option>
@@ -66,18 +66,16 @@
             <option value="Cemic">400</option>
 
           </select>
+        </div>
 
-          <select name="select">
-          <option value="ehrman">Dr.Ehrman Patricio</option>
-          <option value="barbieri">Dra.Barbieri Silvina</option>
-          <option value="echegoyen">Dr.Echegoyen Raul</option>
-          <option value="perez">Dra.Perez Natalia</option>
-        </select> 
-
-        <div>
+        <div class="calendario p20">
             <input type="date" id="fecha" name="fecha:"
             value="2023-01-01"
-            min="2023-01-01" max="2023-12-31"> <select name="hora" id="hora">
+            min="2023-01-01" max="2023-12-31">
+        </div>     
+
+          <div class="horario p20"> 
+            <select name="hora" id="hora">
             <option value="horario">10:00hs</option>
             <option value="horario">10:15hs</option>
             <option value="horario">10:30hs</option>
@@ -95,8 +93,18 @@
             <option value="horario">13:30hs</option>
             <option value="horario">13:45hs</option>
             <option value="horario">14:00hs</option>
+            </select>
+          </div>  
+
+      <div class="doctoresT Align-i-center p20">
+          <select class="Align-i-center" name="select">
+          <option value="ehrman">Dr.Ehrman Patricio</option>
+          <option value="barbieri">Dra.Barbieri Silvina</option>
+          <option value="echegoyen">Dr.Echegoyen Raul</option>
+          <option value="perez">Dra.Perez Natalia</option>
         </select>
-        
+      </div> 
+      <div class="doctorselec Align-i-center">
         <section >
             <img src="../img/patricio.jpeg" alt="medicopatricio">
             <h1 >Dr.Ehrman Patricio</h1>
@@ -109,10 +117,11 @@
                 Tocoginecología
                 Medicina Materno-Fetal
                 </p>
+            
         
         <input type="submit" value="Confirmar turno">
         
-        </div>
+      </div>
          </main>
          <hr>
           <!--Pie de pagina-->
