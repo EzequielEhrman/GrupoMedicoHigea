@@ -33,7 +33,7 @@ text-align: center;
 .subtituT{text-align: center;}
 .imgdr{text-align: center;}
 .subth4{ font-family: 'Roboto', sans-serif;}
-
+.Trecetas{font-family: 'Roboto', sans-serif;}
 
 
 /*@medias*/
@@ -123,7 +123,16 @@ font-style: italic;}
     .profesionales{
         font-size: 30px;
     }
-    
+    /*RECETAS FLEX*/
+    .tituloRec{display: flex;
+    flex-direction: column;
+    align-items: center;
+font-size: 30px;}
+.medicos{display: flex;
+    position: relative;
+    top: -39px;
+    left: 247px;
+}
 }
 
 
@@ -168,5 +177,18 @@ margin: 5px;
     top: -22px;
     left: 39px;
 }
+.GridMainRecetas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tituloRec{font-size: 20px;}
+.selecdrs{
+    font-size: 10px;
+}
+.fordrs{display: flex;
+flex-direction: column;
+align-items: center;}
+
 }
 

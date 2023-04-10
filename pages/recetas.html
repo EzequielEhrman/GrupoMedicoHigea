@@ -7,6 +7,12 @@
     <title>Recetas</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/logo-higea (1).png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -26,19 +32,19 @@
                 </ul>
             </nav>
         </header>
-<!--Contenido Principal de contacto-->
+<!--Contenido Principal de Recetas -->
 <main class="GridMainRecetas">
             <div class="imgrecetas">
         <img class="foto" src="../img/Instalaciones.jpg" alt="medico-recetas" width="100%">
             </div>
 
             <div class="tituloRec">
-             <h3 id="Trecetas"> Recetas </h3>
+             <h3 id="Trecetas">RECETAS</h3>
             </div> 
 
-            <div class="selecdrs">
-            <h2>Seleccione a su medico </h2>
-                <select name="select">
+            <div class="selecdrs Align-i-center p20">
+            <h2>Seleccione a su medico:</h2>
+                <select class="medicos" name="select">
                    <option value="Dr-EhrmanPatricio">Dr.Ehrman Patricio</option>
                    <option value="Dra.BarbieriSilvina">Dra.Barbieri Silvina</option>
                    <option value="Dr.EchegoyenRaul">Dr.Echegoyen Raul</option>
@@ -46,7 +52,7 @@
                 </select>
             </div> 
 
-            <div class="fordrs">
+            <div class="fordrs fondocua">
              <form action="#">
                 <label for="text">Nombre Completo:</label><br>
                 <input type="text" name="nombre" id="nombre"><br>
@@ -58,7 +64,7 @@
                 <textarea name="solicituddelmedicamento" id="solicituddelmedicamento" cols="30" rows="5"></textarea>
  
 
-    
+            <Br>
             <input type="submit" value="Enviar">
     
              </form>
