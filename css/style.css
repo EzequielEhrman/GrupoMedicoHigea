@@ -18,7 +18,9 @@ ul{
 .profesionales{
     font-family: 'Roboto', sans-serif;
 }
-.tituloh3{font-family: 'Roboto', sans-serif;}
+.tituloh3{font-family: 'Roboto', sans-serif;
+text-align: center;
+}
 .titulodr{
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -28,6 +30,11 @@ ul{
     padding: 10px;
     margin: 10px;
 }
+.subtituT{text-align: center;}
+.imgdr{text-align: center;}
+.subth4{ font-family: 'Roboto', sans-serif;}
+
+
 
 /*@medias*/
 /*DESKTOP*/
@@ -39,7 +46,7 @@ ul{
 
     }
     header,ul, footer{display: flex;}
-
+    /*GRID MAIN INDEX¨*/
     .gridmainIndex{display: grid;
     grid-template-areas: 
     "imgprincipal imgprincipal imgprincipal"
@@ -55,7 +62,8 @@ flex-direction: column;
 align-items: center;
 font-family: Arial, Helvetica, sans-serif;
 font-style: italic;}
-    .tituloh3{grid-area: tituloh3;}
+    .tituloh3{grid-area: tituloh3;
+    font-size: 30px;}
     .mapa{grid-area: mapa;}
     .formulario{grid-area: formulario;}
     .jusconbet{justify-content: space-between;}
@@ -85,6 +93,7 @@ font-style: italic;}
     color:brown;
     padding: 20px;
     }
+    /* GRID PROFESIONALES*/
     .gridmainProf{
         display: grid;
         grid-template-areas: 
@@ -114,7 +123,7 @@ font-style: italic;}
     .profesionales{
         font-size: 30px;
     }
-
+    
 }
 
 
@@ -159,5 +168,5 @@ margin: 5px;
     top: -22px;
     left: 39px;
 }
-
 }
+
