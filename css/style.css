@@ -33,8 +33,8 @@ text-align: center;
 .subtituT{text-align: center;}
 .imgdr{text-align: center;}
 .subth4{ font-family: 'Roboto', sans-serif;}
-.Trecetas{font-family: 'Roboto', sans-serif;}
-
+#Trecetas{font-family: 'Roboto', sans-serif;}
+.tituloContac{ font-family: 'Roboto', sans-serif;}
 
 /*@medias*/
 /*DESKTOP*/
@@ -94,6 +94,7 @@ font-style: italic;}
     color:brown;
     padding: 20px;
     }
+    .parrafoprinci{font-size: 18px;}
     /* GRID PROFESIONALES*/
     .gridmainProf{
         display: grid;
@@ -137,27 +138,23 @@ font-size: 30px;}
 /*CONTACTO*/
 .GridMainContacto{display: grid;
 grid-template-areas: 
-"tituloContac tituloContac"
-"logoynumero logogmail"
-"formucont logodirec";
-grid-template-columns: repeat(2,auto);
-grid-template-rows: repeat(3,auto);}
-.tituloContac{grid-area: tituloContac;
-text-align: center;}
+ "tituloContac tituloContac"
+ "logoynumero logogmail"
+ "formucont iframe";
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto auto auto;}
+.tituloContac{grid-area: tituloContac;}
 .logoynumero{grid-area: logoynumero;}
 .logogmail{grid-area: logogmail;}
 .formucont{grid-area: formucont;}
-.logodirec{grid-area: logodirec;}
-
-.logoscontactoc{display: inline-block;
-position: relative;
-padding: 20px;}
-.logosmails{display: inline-block;
-position: relative;
-padding:10px;
-}
-.direccionM{ font-family: 'Roboto', sans-serif;
-font-size: 20px;}
+.iframe{grid-area: iframe;}
+.direccionM{font-size:22px;}
+.logosmails{font-size: 22px;}
+.logoscontactoc{font-size: 22px;}
+.formularioc{font-size: 18px;}
+.tituloContac{text-align: center;
+font-size: 30px;}
+.tituloh3{font-size: 30px;}
 }
 
     
@@ -217,6 +214,29 @@ margin: 5px;
 .fordrs{display: flex;
 flex-direction: column;
 align-items: center;}
+.GridMainContacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logoynumero{display: inline-block;
+position: relative;
+top: 49px;
+left: -74px;}
+.logosmails{display: inline-block;
+position: relative;
+top: -12px;
+left: 4px;
+font-size: 20px;
+color: brown;}
+.logoscontactoc{display: inline-block;
+position: relative;
+top: -9px;
+left: 40px;
+font-size: 20px;
+color: brown;}
+.direccionM{font-size: 20px;
+color: brown;}
 
 }
 
