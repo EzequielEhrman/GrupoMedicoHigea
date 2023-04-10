@@ -68,6 +68,7 @@ font-style: italic;}
     .formulario{grid-area: formulario;}
     .jusconbet{justify-content: space-between;}
     .p20{padding: 20px;}
+    .m20{margin: 20px;}
     .Align-i-center{align-items: center;}
     .subtitu{font-size: 40px;
         font-family: 'Roboto', sans-serif;
@@ -133,7 +134,34 @@ font-size: 30px;}
     top: -39px;
     left: 247px;
 }
+/*CONTACTO*/
+.GridMainContacto{display: grid;
+grid-template-areas: 
+"tituloContac tituloContac"
+"logoynumero logogmail"
+"formucont logodirec";
+grid-template-columns: repeat(2,auto);
+grid-template-rows: repeat(3,auto);}
+.tituloContac{grid-area: tituloContac;
+text-align: center;}
+.logoynumero{grid-area: logoynumero;}
+.logogmail{grid-area: logogmail;}
+.formucont{grid-area: formucont;}
+.logodirec{grid-area: logodirec;}
+
+.logoscontactoc{display: inline-block;
+position: relative;
+padding: 20px;}
+.logosmails{display: inline-block;
+position: relative;
+padding:10px;
 }
+.direccionM{ font-family: 'Roboto', sans-serif;
+font-size: 20px;}
+}
+
+    
+
 
 
 
